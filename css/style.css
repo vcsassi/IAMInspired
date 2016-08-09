@@ -1,0 +1,332 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+
+.col-lg-6 col-md-6 col-sm-6 {
+  display:none;
+}
+
+/**  Basic Page CSS **/
+body{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+
+/**  Header Navigation **/
+
+header .navbar {
+  padding: 30px 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  transition: all .5s ease-out;
+}
+
+header .navbar-default {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+header .navbar-default .navbar-nav a {
+  color: black;
+  padding: 5px 8px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header .navbar-default .navbar-nav a:hover {
+  color: #004D40;
+}
+
+header .navbar-default .navbar-nav .active a {
+ /* font-weight: 700;*/
+  color: #004D40;
+  background: transparent;
+  border-bottom: 2px solid #004D40;
+  text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+  color: #header .navbar-default .navbar-nav .active a;
+  background: transparent;
+  text-shadow: none;
+}
+
+/**  Navbar Brand **/
+
+header .navbar-brand {
+  background-repeat: no-repeat;
+  background-position: 15px 0;
+  height: auto;
+}
+
+header .navbar-brand h1 {
+  color: black;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-left: 38px;
+}
+
+header .navbar-brand span.subhead {
+  display: block;
+  font-family: "Open Sans", serif;
+  font-size: .6em;
+  font-weight: 350;
+}
+
+/**  Navbar Toggle **/
+header .navbar-toggle {
+  background-color: #279182;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+img {
+    display: block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen
+and (max-width: 768px) {
+  header .navbar-collapse.in {
+    background-color: rgba(0,0,0, .5);
+  }
+}
+
+/**  nav inbody **/
+
+header .inbody {
+  background: rgba(104,73,49,.9);
+}
+
+header .navbar.inbody {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+}
+
+header .navbar.inbody .navbar-nav {
+  padding-top: 10px;
+}
+
+header .inbody .navbar-brand {
+  background-size: 43px;
+  background-position: top left;
+  margin-top: 5px;
+  padding-bottom: 0;
+  margin-left: 10px;
+}
+
+header .inbody .navbar-brand h1 {
+  font-size: 1.1em;
+  padding-left: 38px;
+}
+
+header .inbody .navbar-brand span.subhead {
+  display: none;
+}
+
+/**  Carousel Fade **/
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 0;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+.carousel-control {
+  opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+#featured .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+
+/**  Page **/
+.page {
+  padding: 50px 0;
+}
+
+.page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/**  Page -- About **/
+/*#mission {
+  background-color: #FFFFFF;
+  border-top: 20px solid rgba(255, 255, 255, .5);
+}*/
+.map {
+  width:100%;
+  height:300px;
+}
+
+@media only screen 
+and (min-width: 450px)
+and (max-width: 768px) {
+  .service p {
+    padding: 0 20%;
+  }
+}
+
+
+/**  Footer **/
+
+footer {
+  background: #2A2C2B;
+  color: white;
+  font-size: .8em;
+  padding: 20px 0 40px 0;
+}
+
+footer a {
+  color: #E0E6AE;
+}
+
+footer a:hover {
+  color: #EEC856 !important;
+}
+
+footer a {
+  color: #EEC856 !important;
+}
+
+footer .navbar {
+  margin-bottom: 0;
+  min-height: 0;
+}
+
+footer .navbar-default {
+  background-color: transparent;
+  border: none;
+  margin-right: 40px;
+}
+
+footer .navbar-nav>li a {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: underline;
+  color: #FFFFFF !important;
+}
+
+#video {
+  z-index: 9000;
+}
+
+#tickets {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 160px;
+    padding-top: 160px;
+    background-image: url(../images/Untitled-2.jpg);
+    z-index: 9000;
+}
+
+#ticketme {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#count_down {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  bottom: 50px;
+  z-index: 9000;
+  font-weight: 40;
+/*  border:1px solid blue;*/
+  padding-left: 55px;
+
+}
+
+#count_down_sm {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  bottom: 50px;
+  z-index: 9000;
+  font-weight: 40;
+/*  border:1px solid blue;*/
+  padding-left: 55px;
+
+}
+
+/*iPad in landscape*/
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+.col-lg-6 col-md-6 col-sm-6 {
+  display;
+}
+.col-lg-4 col-md-4 col-sm-6 {
+  display:none;
+}
+}*/
+/*Retina iPad in landscape*/
+ /*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) { 
+  .col-lg-6 col-md-6 col-sm-6 {
+  display;
+}
+.col-lg-4 col-md-4 col-sm-6 {
+  display:none;
+}
+}*/
+
+/*iPad 1 & 2 in landscape*/
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  {
+   .col-lg-5 col-md-5 col-sm-5 {
+  display;
+}
+.col-lg-4 col-md-4 col-sm-6 {
+  display:none;
+}
+ }*/
+ /* STYLES GO HERE }*/

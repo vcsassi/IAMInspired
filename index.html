@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Am Inspired</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/prefixfree.min.js"></script>  
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="js/gmaps.js"></script>
+  <script>
+    $( document ).ready(function() {
+        $('#count_down').countdown('2016/09/18 5:00', function(event) {
+          $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+        });
+        $('#count_down_sm').countdown('2016/09/18 5:00', function(event) {
+          $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+        });
+
+        var map = new GMaps({
+          el: '#pointers_map',
+          lat: 44.99209811587593,
+          lng: -93.23803599999997,
+          zoom: 12,
+          zoomControl : true,
+          zoomControlOpt: {
+            style : 'SMALL',
+            position: 'TOP_LEFT'
+          },
+          panControl : false,
+        });
+        map.addMarker({
+          lat: 44.99209811587593,
+          lng: -93.23803599999997,
+          title: 'I Am Inspired',
+          infoWindow: {
+          content: '<p>Intelligent Nutrients event space.<br>983 E Hennepin Ave, Minneapolis, MN 55414</p>' }
+      });
+    });
+  </script>
+</head>
+<body>
+  <span id="count_down" class="visible-xs"></span>
+  <span id="count_down_sm" class="visible-sm visible-md visible-lg"></span>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#featured"><h1># I Am Inspired<span class="subhead"></span></h1></a>
+        </div><!-- navbar-header -->
+        <div class="collapse navbar-collapse" id="collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#featured">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#boutiques">Boutiques</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#map">Map</a></li>
+          </ul>        
+        </div><!-- collapse navbar-collapse -->
+      </div><!-- container -->
+    </nav>
+    <div class="carousel fade" data-ride="carousel" id="featured">
+      <ol class="carousel-indicators">
+      </ol>
+      <div class="carousel-inner fullheight">
+        <div class="item">
+          <img src="images/carousel-painting1.jpg" alt="untitled 4">
+        </div> 
+        <div class="item">
+          <img src="images/carousel-painting2.jpg" alt="untitled">
+        </div>
+        <div class="item">
+          <img src="images/carousel-NO-WORDS-copy.jpg" alt="No words">
+        </div>
+        <div class="item">
+            <img src="images/carousel-stalkin.jpg" alt="untitled 3">
+        </div>
+        <!-- <div class="item"><img src="images/carousel-Untitled-4.jpg" alt="untitled 4">
+        </div> -->
+      </div><!-- carousel-inner -->
+      <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div><!-- featured carousel -->
+  </header>
+  <div class="main">
+    <div class="page" id="about">
+      <div class="content container">
+        <h2>About</h2>      
+        <div class="col-lg-12 centered">
+          <p>#IAMInspired is an <a href="http://iamsarahedwards.com/" target="_blank">I AM™</a> experience that focuses on the conversation between art & fashion. The night will highlight art by <a href="http://www.studiosilenti.com/" target="_blank">Caitlin Karolczak</a>, Mark, and <a href="http://cargocollective.com/sehorn/Justin-James-Sehorn" target="_blank">Justin James Sehorn</a> and feature looks from <a href="http://www.bluebirdboutique.com/" target="_blank">Bluebird</a>, <a href="https://www.shophazelandrose.com/" target="_blank">Hazel & Rose</a>,  <a href="http://merilouboutique.com" target="_blank">Merilou</a>, <a href="http://www.mysister.org/" target="_blank">MySister.org</a>, and <a href="http://www.shopsemblance.com/" target="_blank">Semblance</a> and <a href="http://www.stephaniesshop.com/" target="_blank">Stephanie's</a>. The first 100 guests will receive a beautiful <a href="https://www.kitandace.com/" target="_blank">Kit + Ace</a> gift bag. Harp music will be provided by <a href="http://www.buxtonharp.com/" target="_blank">James Buxton</a>. The event starts with a cocktail hour sponsored by <a href="http://avivvodka.com/" target="_blank">AVIV Vodka</a> at 5pm and takes place in the rooftop space at <a href="http://www.intelligentnutrients.com/" target="_blank">Intelligent Nutrients</a> event space. Very limited tickets for this event.</p>
+        </div><!-- row -->
+      </div><!-- content container -->
+    </div><!-- about page -->
+    <section id="tickets">
+      <div id="ticketme">
+        <div class="container">
+          <div class="row">  
+            <div class="col-lg-10">
+              <div class="col-lg-12">
+                <h1 class="centered"> Sun, September 18 5pm</h1>
+                <br>
+              </div>
+              <div class="col-lg-12">
+                <h1 class="centered">Tickets are $50 and include a Kit + Ace gift bag and <a href="http://avivvodka.com/" target="_blank">AVIV</a> art-inspired cocktail</h1>
+              </div>
+              
+              <div class="col-lg-8">
+              </div><br>
+
+            </div>
+          </div> <!-- row -->
+          <div class="row">
+            <div class="col-lg-12 centered">
+              <button type="button" target="_blank"class="btn btn-default" onclick="location.href='http://www.eventbrite.com/e/i-am-inspired-tickets-18141217871?utm_source=eb_email&utm_medium=email&utm_campaign=new_event_email&utm_term=viewmyevent_button'"  data-animated="FadeIn">GET TICKETS
+              </button>      
+            </div>
+          </div>
+        </div><!-- /container -->
+      </div><!-- /tickets -->
+    </section>
+    <div class="page" id="boutiques">
+      <div class="content container">
+        <h2>Boutiques</h2>
+        <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+          <a href="http://arrow-minneapolis.com//" target="_blank">
+            <img  src="images/boutique-Arrow.jpg" class="img-responsive">
+          </a>
+          <p class="titlepic">Arrow</p> 
+          <p class="titlepic2">@Arrowmpls</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+          <a href="http://bumbershute.com/" target="_blank">
+            <img  src="images/boutique-Bumbershute.jpg" class="img-responsive">
+          </a>
+          <p class="titlepic"></p>Bumbershute<p class="titlepic2">@bumbershute</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+          <a href="https://etsy.com/shop/CVSTINGS" target="_blank">
+            <img  src="images/boutiqueCVSTINGS.jpg" class="img-responsive">
+          </a>
+            <p class="titlepic">CVSTINGS</p> 
+            <p class="titlepic2">@cvstings</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+          <a href="http://dnolo.com/" target="_blank">
+            <img  src="images/boutique-D.NOLO.jpg" class="img-responsive">
+          </a>
+          <p class="titlepic">D.NOLO</p> 
+          <p class="titlepic2">@d.nolo</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+          <a href="http://mysister.org/" target="_blank">
+            <img  src="images/boutique-MySister.jpg" class="img-responsive">
+          </a>
+          <p class="titlepic">My Sister</p> 
+          <p class="titlepic2">@mysisterorg</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+          <a href="http://shopsemblance.com" target="_blank">
+            <img  src="images/boutique-Semblance.jpg" class="img-responsive">
+          </a>
+          <p class="titlepic">Semblance</p> 
+          <p class="titlepic2">@semblanceboutique</p>
+        </div>
+      </div><!-- content container -->
+    </div><!-- boutiques page -->
+    <div class="page" id="sponsors">
+      <div class="content container">
+        <h2>Sponsors</h2>
+        <div class="row">
+          <article class="service col-md-4 col-sm-6 col-xs-12">
+            <a href="http://www.bluebirdboutique.com/" target="_blank">
+            <img class="icon" src="images/bluebird.png" alt="Icon">
+          </article>
+          <article class="service col-md-4 col-sm-6 col-xs-12">
+            <a href="http://artfullivingmagazine.com/" target="_blank">
+            <img class="icon" src="images/logoArtfulLivingMag.jpg" alt="Icon">
+          </article>
+          <article class="service col-md-4 col-sm-6 col-xs-12">
+            <a href="http://mysister.org/" target="_blank">
+            <img class="icon" src="images/logoMy-Sister.jpg" alt="Icon">
+           </article>
+           <article class="service col-md-4 col-sm-6 col-xs-12">
+            <a href="http://minneapolis.minnesota.thescoutguide.com/" target="_blank">
+            <img class="icon" src="images/logoTheScoutGuideMinneapolis.jpg" alt="Icon">
+           </article>
+           <article class="service col-md-4 col-sm-6 col-xs-12">
+            <a href="https://www.shophazelandrose.com/" target="_blank">
+            <img class="icon" src="images/Hazel-&-Rose.png" alt="Icon">
+           </article>
+           <article class="service col-md-4 col-sm-6 col-xs-12">
+            <a href="https://www.merilouboutique.com/" target="_blank">
+            <img class="icon" src="images/MerilouBoutique.png" alt="Icon">
+           </article>
+           <article class="service col-md-4 col-sm-6 col-xs-12">
+            <a href="https://www.shopsemblance.com/" target="_blank">
+            <img class="icon" src="images/semblance.png" alt="Icon">
+           </article>
+           <article class="service col-md-4 col-sm-6 col-xs-12">
+            <a href="https://www.stephaniesshop.com/" target="_blank">
+            <img class="icon" src="images/Stephanies.png" alt="Icon">
+        </div><!-- content container -->
+      </div><!-- Sponsors page -->
+      <div class="page" id="staff">
+        <div class="content container">
+        <br>
+          <h2>Staff</h2>
+          <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+            <a href="http://iamsarahedwards.com///" target="_blank">
+              <img  src="images/staff_Sarah_Edwards.jpg" class="img-responsive">
+            </a>
+            <p class="titlepic">Sarah Edwards
+              <br>PRODUCER
+            </p> 
+            <p class="titlepic2">@iamsarahedwards
+            </p> 
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+            <a href="http://daveesecrets.com/" target="_blank">
+              <img  src="images/staff_Davee_Ek.jpg" class="img-responsive">
+            </a>
+            <p class="titlepic"></p>Davee Ek
+              <br> LEAD STYLIST
+            <p class="titlepic2">@youngbrokefabulous</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+            <a href="http://cargocollective.com/sehorn" target="_blank">
+              <img  src="images/staff_Justin_James_Sehorn.jpg" class="img-responsive">
+            </a>
+            <p class="titlepic">Justin James Sehorn
+              <br>FEATURED ARTIST
+            </p> 
+            <p class="titlepic2">@tuff_lung</p> 
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+            <a href="https://www.etsy.com/shop/CVSTINGS" target="_blank">
+              <img src="images/staff_Lisa_Marie_Gherardini.jpg" class="img-responsive">
+            </a>
+           <p class="titlepic">Lisa Marie Gherardini
+            <br>ART DIRECTOR
+            </p> 
+            <p class="titlepic2">@yesmisslisa</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+            <a href="http://iamstpaul.com//" target="_blank">
+              <img  src="images/staff_Carrissa_Glarner.jpg" class="img-responsive">
+            </a>
+            <p class="titlepic">Carrissa Glarner
+              <br>ASSISTANT PRODUCER
+            </p> 
+            <p class="titlepic2">@carr_glar
+            </p>
+          </div>
+            <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+            <!-- <a href="http://google.com" target="_blank"> -->
+              <img  src="images/staff_Alex_Kelm.jpg" class="img-responsive">
+           <!--  </a> -->
+            <p class="titlepic">Alex Kelm
+              <br>ASSISTANT STYLIST
+            </p> 
+            <p class="titlepic2">@just__alexander
+            </p>
+          </div>
+               <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+            <a href="http://lashhausmn.com/" target="_blank">
+              <img  src="images/staff_Heather_bruneau.jpg" class="img-responsive">
+            </a>
+            <p class="titlepic">Heather Bruneau
+              <br>MAKE-UP DIRECTOR
+            </p> 
+            <p class="titlepic2">
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+            <!-- <a href="http://google.com/" target="_blank"> -->
+              <img  src="images/staff_Lauren_Arant.jpg" class="img-responsive">
+            </a>
+            <p class="titlepic">Lauren Arant
+              <br>ASSISTANT PRODUCER
+            </p> 
+            <p class="titlepic2">@laurenarant
+            </p>
+          </div>
+       <!--    <div class="col-lg-4 col-md-4 col-sm-6" data-animated="FadeIn">
+            <a href="http://google.com" target="_blank">
+              <img  src="images/" class="img-responsive">
+            </a>
+            <p class="titlepic">Laurent Arant
+              <br>ASSISTANT PRODUCER
+            </p> 
+            <p class="titlepic2">@laurenarant
+            </p>
+          </div> -->
+        </div><!-- container -->
+      </div><!-- staff page -->
+      <div class="page" id="map">
+        <div class="content container">
+          <h2>Map</h2>
+          <div class="col-lg-4 col-md-12 col-sm-6 map" data-animated="FadeIn">
+            <div id="pointers_map" style="width:100%;height:300px;"></div>
+          </div> 
+        </div><!-- container -->
+      </div><!-- map page -->
+    </div><!-- main -->
+  </div>
+  <footer>
+    <div class="content container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>All contents &copy; 2015 
+            <a href="http://iamsarahedwards.com/" target="_blank">iamsarahedwards.com</a>. All rights reserved.
+          </p>    
+        </div><!-- col-sm-6 -->
+        <div class="col-sm-6">
+          <nav class="navbar navbar-default" role="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              <a href="http://twitter.com/iamsarahedwards" target="_blank" class="btn btn-social-icon btn-twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+               <a href="https://instagram.com/iaminspiredmsp/" target="_blank" class="btn btn-social-icon btn-pinterest">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/iaminspiredmsp" target="_blank" class="btn btn-social-icon btn-facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </ul>
+          </nav>        
+        </div><!-- col-sm-6 -->
+      </div><!-- row -->
+    </div><!-- content container -->
+  </footer>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js">
+  </script>
+  <script src="js/myscript.js">
+  </script>
+  <script type="text/javascript">
+  </script>
+</body>
+</html>
